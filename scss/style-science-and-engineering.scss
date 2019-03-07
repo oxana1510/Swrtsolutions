@@ -1,0 +1,135 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+@font-face{
+	font-family: "ArialMT";
+    src: url("../fonts/ArialMT/ArialMT.woff"),
+    url("../fonts/ArialMT/ArialMT.eot"),
+    url("../fonts/ArialMT/ArialMT.ttf"),
+}
+@font-face{
+	font-family: "Helvetica Neue Cyr - Roman";
+	src: url(../fonts/HelveticaNeueCyr-Roman/HelveticaNeueCyr-Roman.woff),
+	url(../fonts/HelveticaNeueCyr-Roman/HelveticaNeueCyr-Roman.eot),
+	url(../fonts/HelveticaNeueCyr-Roman/HelveticaNeueCyr-Roman.ttf);
+}
+@font-face{
+	font-family: "Helvetica Neue Cyr-Thin";
+	src: url(../fonts/HelveticaNeueCyr-Thin/HelveticaNeueCyr-Thin.woff),
+	url(../fonts/HelveticaNeueCyr-Thin/HelveticaNeueCyr-Thin.eot),
+	url(../fonts/HelveticaNeueCyr-Thin/HelveticaNeueCyr-Thin.ttf);
+}
+
+@font-face{
+	font-family: "HelveticaNeueCyr-Bold";
+	src: url(../fonts/HelveticaNeueCyr-Bold/HelveticaNeueCyr-Bold.woff),
+	url(../fonts/HelveticaNeueCyr-Bold/HelveticaNeueCyr-Bold.eot),
+	url(../fontsHelveticaNeueCyr-Bold/HelveticaNeueCyr-Bold.ttf);
+}
+$font-title: "Helvetica Neue Cyr-Thin";
+$font-text: "Helvetica Neue Cyr - Roman";
+$font-solt-water: "HelveticaNeueCyr-Bold";
+$font-small-text: "ArialMT";
+
+@mixin center-block{
+	margin: auto;
+	text-align: center;
+	padding: 0 20px;
+}
+.header__title-pd{	
+	color: #fefefe;
+	font: 900 2.75em $font-title;
+	text-align: center;
+	padding: 90px 0 160px 0;
+	z-index: 20000;
+	max-width: 960px;
+    margin: auto;
+}
+.text_main{
+	font: 2.75em/56px $font-text;
+	padding: 92px 0 42px 0;
+}
+.modeling{
+	max-width: 920px;
+	@include center-block;
+	
+.modeling-text{
+	font: 2.188em/46px $font-title;
+	padding-bottom: 63px;
+}
+.modeling-img{
+	max-width:688px;
+	width: 100%;
+	height: auto;
+	padding-bottom: 65px;
+}
+}
+.identification-bg{
+	background-color: #f7f7f7;
+.identification{
+	max-width: 945px;
+	@include center-block;
+.text-pd{
+	padding: 91px 0 93px 0;
+}
+.identification-img{
+	max-width: 929px;
+	width: 100%;
+	height: auto;
+	padding-bottom: 78px;
+}
+}
+}
+.engineered{
+	max-width: 945px;
+	@include center-block;
+.engineered-img{
+	max-width: 655px;
+	width: 100%;
+	height: auto;
+	padding-bottom: 113px;
+}
+}
+.configuration-bg{
+	background-color: #f7f7f7;
+.configuration{
+	max-width: 995px;
+	@include center-block;
+.configuration-img{
+	max-width: 993px;
+	width: 100%;
+	height: auto;
+	padding-bottom: 122px;
+}
+}
+}
+@media screen and (max-width:1196px){
+.header__title-pd{
+	padding-bottom: 90px;
+}
+}
+.text_main{
+	font-size: 1.6em;
+	line-height: 35px;
+	padding: 72px 0 22px 0;
+}
+.modeling{
+.modeling-text{
+	font-size: 1.2em;
+	line-height: 30px;
+}
+}
+
+@media screen and (max-width:400px){
+.header__title-pd{
+	font-size: 2.5em;
+}
+}
+@media screen and (max-width:340px){
+.header__title-pd{
+	font-size: 2em;
+}
+}
+
+

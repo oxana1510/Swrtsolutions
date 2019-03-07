@@ -16,7 +16,7 @@
   src: url(../fonts/HelveticaNeueCyr-Bold/HelveticaNeueCyr-Bold.woff), url(../fonts/HelveticaNeueCyr-Bold/HelveticaNeueCyr-Bold.eot), url(../fontsHelveticaNeueCyr-Bold/HelveticaNeueCyr-Bold.ttf); }
 .header__title-pd {
   color: #fefefe;
-  font: 2.75em "Helvetica Neue Cyr-Thin";
+  font: 900 2.75em "Helvetica Neue Cyr-Thin";
   text-align: center;
   padding: 90px 0 160px 0;
   z-index: 20000;

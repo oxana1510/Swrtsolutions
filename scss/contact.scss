@@ -1,0 +1,225 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+@font-face{
+	font-family: "ArialMT";
+    src: url("../fonts/ArialMT/ArialMT.woff"),
+    url("../fonts/ArialMT/ArialMT.eot"),
+    url("../fonts/ArialMT/ArialMT.ttf"),
+}
+@font-face{
+	font-family: "Helvetica Neue Cyr - Roman";
+	src: url(../fonts/HelveticaNeueCyr-Roman/HelveticaNeueCyr-Roman.woff),
+	url(../fonts/HelveticaNeueCyr-Roman/HelveticaNeueCyr-Roman.eot),
+	url(../fonts/HelveticaNeueCyr-Roman/HelveticaNeueCyr-Roman.ttf);
+}
+@font-face{
+	font-family: "Helvetica Neue Cyr-Thin";
+	src: url(../fonts/HelveticaNeueCyr-Thin/HelveticaNeueCyr-Thin.woff),
+	url(../fonts/HelveticaNeueCyr-Thin/HelveticaNeueCyr-Thin.eot),
+	url(../fonts/HelveticaNeueCyr-Thin/HelveticaNeueCyr-Thin.ttf);
+}
+
+@font-face{
+	font-family: "HelveticaNeueCyr-Bold";
+	src: url(../fonts/HelveticaNeueCyr-Bold/HelveticaNeueCyr-Bold.woff),
+	url(../fonts/HelveticaNeueCyr-Bold/HelveticaNeueCyr-Bold.eot),
+	url(../fontsHelveticaNeueCyr-Bold/HelveticaNeueCyr-Bold.ttf);
+}
+$font-title: "Helvetica Neue Cyr-Thin";
+$font-text: "Helvetica Neue Cyr - Roman";
+$font-solt-water: "HelveticaNeueCyr-Bold";
+$font-small-text: "ArialMT";
+
+
+@mixin contact{
+	color: #959595;
+	padding-left: 15px;
+	font: 1em $font-small-text;
+	border: 1px solid #dfdfdf;
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
+}
+input[type="submit"]{
+	-webkit-appearance: none;
+	 border-radius: 0;
+}
+
+.title-uppercase{
+	text-transform: uppercase;
+}
+a{
+	text-decoration: none;
+}
+.contact-wrapper{
+	max-width: 975px;
+	margin: 0 auto;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	padding: 100px 150px;
+	position: relative;
+&:after{
+	content: "";
+	border-bottom: 1px solid #dfdfdf;
+	position: absolute;
+	width: 1000%;
+	left: -500%;
+	bottom: 0;
+}
+}
+.comments-block{
+	max-width: 625px;
+	width: 100%;
+	padding-right: 25px;
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
+}
+.mailphone-block{
+	width: 350px;
+	border-left: 1px solid #dfdfdf;
+	padding-left: 25px;
+}
+.contact-title{
+	font: 2.75em $font-title;
+	margin-bottom: 25px;
+}
+.comments-text{
+	font: 1.125em/33px $font-small-text;
+	max-width: 572px;
+	margin-bottom: 25px;
+}
+.link-contact{
+	color: #649300;
+	font: 1.125em $font-small-text;
+	display: block;
+	margin-bottom: 40px;
+&:hover{
+	opacity: 0.85;
+}
+}
+.form_inputs{
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+}
+.NameBlock{
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+	max-width: 597px;
+	width: 100%;
+.Name_input{
+	height: 43px;
+	max-width: 293px;
+	width: 100%;
+	margin-bottom: 17px;
+	@include contact;
+}
+}
+.Name_input:first-child{
+	margin-right: 12px;
+}
+.mail_input{
+	max-width: 597px;
+	width: 100%;
+	height: 43px;
+	margin-bottom: 17px;
+	@include contact;
+}
+textarea{
+	max-width: 597px;
+	width: 100%;
+	height: 123px;
+	padding-top: 15px;
+	@include contact;
+}
+.button__block{
+	padding-top: 15px;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: end;
+	    -ms-flex-pack: end;
+	        justify-content: flex-end;
+	max-width: 600px;
+	width: 100%;
+.button-submit{
+	width: 204px;
+	height: 49px;
+	background: #649300;
+	color: #fefefe;
+	font: 1.125em $font-solt-water;
+	text-transform: uppercase;
+	border: none;
+	cursor: pointer;
+&:hover{
+	opacity: 0.85;
+}
+}
+}
+
+@media screen and (max-width: 1070px){
+.contact-wrapper{
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	padding: 50px 50px 10px 50px;
+}
+.comments-block{
+	border-bottom: 1px solid #dfdfdf;
+	padding-bottom: 25px;
+	padding-right: 0;
+	max-width: 1000px;
+}
+.mailphone-block{
+	margin-top: 25px;
+	border-left: none;
+	padding-left: 0;
+	width: auto;	
+}
+.NameBlock{
+	max-width: 1000px;
+.Name_input{
+	max-width: 500px;
+	width: 100%;
+}
+}
+.mail_input,
+textarea{
+	max-width: 1000px;
+}
+.button__block{
+	max-width: 1000px;
+}
+}
+@media screen and (max-width: 656px){
+.NameBlock{
+	-ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
+.Name_input{
+	max-width: 1000px;
+}
+}
+
+.Name_input:first-child{
+	margin-right: 0;
+}
+}
+@media screen and (max-width: 520px){
+.contact-wrapper{
+	padding: 50px 25px 10px 25px;
+}
+.contact-title{
+	font-size: 2em;
+}
+}
